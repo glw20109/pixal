@@ -1,0 +1,71 @@
+
+/* Display css grid 3 rows, 2 colums */
+body {
+    background-color: #f8f8f8;
+    display: grid;
+    grid-template-rows: .4fr repeat(2, .6fr);
+    grid-template-columns: .5fr .5fr;
+    grid-template-areas: "header header" "design canvasArea" "create canvasArea";
+    text-align: center;
+}
+
+header {
+    grid-area: header;
+    text-align: center;
+
+}
+
+#design {
+    grid-area: design;
+
+}
+
+#create {
+    grid-area: create;
+}
+
+#cavasArea {
+    grid-area: canvasArea;
+
+}
+
+h1 {
+    font-family: 'VT323', monospace;
+    font-size: 70px;
+    margin: 0.2em;
+}
+
+h2 {
+    margin: 1em 0 0.25em;
+}
+
+h2:first-of-type {
+    margin-top: 0.5em;
+}
+
+/* Draws border around table and cells */
+table,
+tr,
+td {
+    border: 1px solid gray;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+/* Sets row height in grid, changing produces larger or smaller grid row */
+tr {
+    height: 20px;
+}
+
+/* Sets width of of cells, changing produces larger or smaller grid cell */
+td {
+    width: 20px;
+}
+
+/* height and width selectors, width changes size of box */
+input[type=number] {
+    width: 3em;
+}

@@ -1,0 +1,50 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <title>Pixel Art Maker!</title>
+    <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="heading-title">Pixel Art Maker</h1>
+    </header>
+    <section id="design">
+        <h2>Design Your Canvas</h2>
+        <form id="sizePicker">
+            <!-- user selects grid size -->
+            Grid Height:
+            <!-- ID is the const for hiegth -->
+            <input type="number" id="inputHeight" name="height" min="1" max="50" value="1"> Grid Width:
+            <!-- ID is the const for width -->
+            <input type="number" id="inputWidth" name="width" min="1" max="50" value="1">
+            <input type="submit">
+        </form>
+    </section>
+    <section id="create">
+        <h2>Pick Your Color</h2>
+        <input type="color" id="colorPicker">
+        <!-- user chooses color to draw -->
+        <h2>Erase Your Drawing</h2>
+        <!-- clears the color from the grid -->
+        <button id="clearMe" type="button">Erase Drawing</button>
+    </section>
+    <section id="canvasArea">
+        <form>
+            <fieldset>
+                <legend>Canvas</legend>
+
+        <table id="pixelCanvas">
+            <!-- drawing grid -->
+        </table>
+            </fieldset>
+        </form>
+    </section>
+    <script src="designs.js"></script>
+</body>
+
+</html>
